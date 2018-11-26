@@ -42,7 +42,7 @@ namespace QuizeSystemWindowsForms.Views
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            EditUserController editUserController = new EditUserController();
+            UserController editUserController = new UserController();
             user.Login = this.textBoxLogin.Text;
             user.Password = this.textBoxPassword.Text;
             user.Name = this.textBoxName.Text;

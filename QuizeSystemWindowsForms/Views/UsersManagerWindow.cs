@@ -30,7 +30,7 @@ namespace QuizeSystemWindowsForms.Views
 
         private void UsersManagerWindow_Load(object sender, EventArgs e)
         {
-           UsersController userContoler = new UsersController();
+           UserController userContoler = new UserController();
            this.dataGridView1.DataSource = userContoler.LoadUserDataTable();
             Console.WriteLine(userContoler.LoadUserDataTable().Rows);
             Console.WriteLine("something");

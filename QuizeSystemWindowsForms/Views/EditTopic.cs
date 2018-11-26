@@ -15,9 +15,9 @@ namespace QuizeSystemWindowsForms.Views
     public partial class EditTopic : Form
     {
         UserModel user;
-        SubjectModell subject;
+        SubjectModel subject;
         TopicModel topic;
-        public EditTopic(UserModel user,SubjectModell subject,TopicModel topic)
+        public EditTopic(UserModel user,SubjectModel subject,TopicModel topic)
         {
             this.user = user;
             this.subject = subject;
@@ -65,6 +65,7 @@ namespace QuizeSystemWindowsForms.Views
         {
             this.Close();
             QuestionManager questionManager = new QuestionManager(user, subject, topic);
+            questionManager.Show();
         }
     }
 }

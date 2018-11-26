@@ -32,7 +32,7 @@ namespace QuizeSystemWindowsForms.Views
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            SubjectModell subject = new SubjectModell();
+            SubjectModel subject = new SubjectModel();
             subject.Name = this.textBoxName.Text;
             SubjectController controller = new SubjectController();
             if (controller.DeleteSubject(subject))

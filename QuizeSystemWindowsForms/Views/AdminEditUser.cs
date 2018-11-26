@@ -37,7 +37,7 @@ namespace QuizeSystemWindowsForms.Views
             }
             else
             {
-                EditUserController editUserController = new EditUserController();
+                UserController editUserController = new UserController();
                 userToEdit.Login = this.textBoxLogin.Text;
                 userToEdit.Password = this.textBoxPassword.Text;
                 userToEdit.Name = this.textBoxName.Text;
@@ -68,7 +68,7 @@ namespace QuizeSystemWindowsForms.Views
 
         private void buttonSearchByLogin_Click_1(object sender, EventArgs e)
         {
-            UsersController usersController = new UsersController();
+            UserController usersController = new UserController();
             if (this.textBoxLogin.Text == "")
             {
                 MessageBox.Show("Enter user login");

@@ -31,7 +31,7 @@ namespace QuizeSystemWindowsForms
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             UserModel user = new UserModel(this.textBoxLogin.Text, this.textBoxPassword.Text);
-            LoginUserController loginUserController = new LoginUserController();
+            UserController loginUserController = new UserController();
             user=loginUserController.Login(user);
             if (user == null)
             {

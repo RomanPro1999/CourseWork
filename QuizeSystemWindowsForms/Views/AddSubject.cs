@@ -43,7 +43,7 @@ namespace QuizeSystemWindowsForms.Views
 
         private void buttonAddSubject_Click(object sender, EventArgs e)
         {
-            SubjectModell subject = new SubjectModell(this.textBoxSubjectName.Text, this.pictureBoxSubjectImage.Image);
+            SubjectModel subject = new SubjectModel(this.textBoxSubjectName.Text, this.pictureBoxSubjectImage.Image);
             SubjectController controller = new SubjectController();
             if (controller.AddSubject(subject))
             {

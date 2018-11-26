@@ -15,8 +15,8 @@ namespace QuizeSystemWindowsForms.Views
     public partial class AddTopic : Form
     {
         UserModel user;
-        SubjectModell subject;
-        public AddTopic(UserModel user,SubjectModell subject)
+        SubjectModel subject;
+        public AddTopic(UserModel user,SubjectModel subject)
         {
             this.user = user;
             this.subject = subject;

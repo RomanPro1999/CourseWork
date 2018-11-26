@@ -47,21 +47,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\EditUserController.cs" />
-    <Compile Include="Controllers\LoginUserController.cs" />
-    <Compile Include="Controllers\RegisterUserController.cs" />
+    <Compile Include="Controllers\QuestionController.cs" />
     <Compile Include="Controllers\SubjectController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\TopicController.cs" />
-    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="DbConnection.cs" />
-    <Compile Include="Models\SubjectModell.cs" />
+    <Compile Include="Models\QuestionModel.cs" />
+    <Compile Include="Models\SubjectModel.cs" />
+    <Compile Include="Models\TestModel.cs" />
     <Compile Include="Models\TopicModel.cs" />
+    <Compile Include="Models\UserChoice.cs" />
     <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Views\AddQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddQuestion.Designer.cs">
+      <DependentUpon>AddQuestion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\AddSubject.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\AddSubject.Designer.cs">
       <DependentUpon>AddSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddTest.Designer.cs">
+      <DependentUpon>AddTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\AddTopic.cs">
       <SubType>Form</SubType>
@@ -110,6 +124,12 @@
     </Compile>
     <Compile Include="Views\EditSubjectInfo.Designer.cs">
       <DependentUpon>EditSubjectInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EditTest.Designer.cs">
+      <DependentUpon>EditTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\EditTopic.cs">
       <SubType>Form</SubType>
@@ -173,8 +193,14 @@
     <Compile Include="Views\UserStartWindow.Designer.cs">
       <DependentUpon>UserStartWindow.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\AddQuestion.resx">
+      <DependentUpon>AddQuestion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\AddSubject.resx">
       <DependentUpon>AddSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddTest.resx">
+      <DependentUpon>AddTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AddTopic.resx">
       <DependentUpon>AddTopic.cs</DependentUpon>
@@ -199,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\EditSubjectInfo.resx">
       <DependentUpon>EditSubjectInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EditTest.resx">
+      <DependentUpon>EditTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\EditTopic.resx">
       <DependentUpon>EditTopic.cs</DependentUpon>

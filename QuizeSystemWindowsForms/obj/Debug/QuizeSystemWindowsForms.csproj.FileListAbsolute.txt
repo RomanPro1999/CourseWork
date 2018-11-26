@@ -26,3 +26,6 @@ C:\Users\roman\source\repos\QuizeSystemWindowsForms\QuizeSystemWindowsForms\obj\
 C:\Users\roman\source\repos\QuizeSystemWindowsForms\QuizeSystemWindowsForms\obj\Debug\QuizeSystemWindowsForms.Views.DeleteUser.resources
 C:\Users\roman\source\repos\QuizeSystemWindowsForms\QuizeSystemWindowsForms\obj\Debug\QuizeSystemWindowsForms.Views.DeleteSubjectByName.resources
 C:\Users\roman\source\repos\QuizeSystemWindowsForms\QuizeSystemWindowsForms\obj\Debug\QuizeSystemWindowsForms.Views.EditSubjectInfo.resources
+C:\Users\roman\source\repos\QuizeSystemWindowsForms\QuizeSystemWindowsForms\obj\Debug\QuizeSystemWindowsForms.Views.AddQuestion.resources
+C:\Users\roman\source\repos\QuizeSystemWindowsForms\QuizeSystemWindowsForms\obj\Debug\QuizeSystemWindowsForms.Views.AddTest.resources
+C:\Users\roman\source\repos\QuizeSystemWindowsForms\QuizeSystemWindowsForms\obj\Debug\QuizeSystemWindowsForms.Views.EditTest.resources

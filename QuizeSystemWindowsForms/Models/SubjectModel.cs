@@ -7,24 +7,21 @@ using System.Drawing;
 
 namespace QuizeSystemWindowsForms.Models
 {
-    public class SubjectModell
+    public class SubjectModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public Image Image { get; set; }
 
-        public SubjectModell(string name,Image img)
+        public SubjectModel(string name,Image img)
         {
             this.Name = name;
             this.Image = img;
         }
-        public SubjectModell()
+        public SubjectModel()
         {
 
         }
-        public string ToString()
-        {
-            return Name;
-        }
+        public string ToString() => Name;
     }
 }

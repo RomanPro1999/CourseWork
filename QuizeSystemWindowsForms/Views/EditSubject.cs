@@ -16,15 +16,15 @@ namespace QuizeSystemWindowsForms.Views
     public partial class EditSubject : Form
     {
         UserModel user;
-        List<SubjectModell> subjects;
-        SubjectModell selectedSubject=null;
+        List<SubjectModel> subjects;
+        SubjectModel selectedSubject=null;
         TopicModel selectedTopic=null;
         public EditSubject(UserModel user)
         {
             this.user = user;
             InitializeComponent();
         }
-        public EditSubject(UserModel user,SubjectModell subject)
+        public EditSubject(UserModel user,SubjectModel subject)
         {
             this.user = user;
             this.selectedSubject = subject;
@@ -93,13 +93,17 @@ namespace QuizeSystemWindowsForms.Views
                 TopicController controller = new TopicController();
                 if (controller.DeleteTopic(selectedTopic))
                 {
-                    MessageBox.Show("Topic ha been deleted");
+                    MessageBox.Show("Topic has been deleted");
                     ResetTopicTable();
                 }
                 else
                 {
                     MessageBox.Show("Error has occured");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Select Topic");
             }
         }
         void ResetTopicTable()
@@ -130,7 +134,6 @@ namespace QuizeSystemWindowsForms.Views
             Console.WriteLine(selectedTopic.Describtion);
             editTopic.Show();
             this.Close();
-
         }
     }
 }

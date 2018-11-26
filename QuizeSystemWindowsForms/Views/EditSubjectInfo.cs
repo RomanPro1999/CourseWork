@@ -15,8 +15,8 @@ namespace QuizeSystemWindowsForms.Views
     public partial class EditSubjectInfo : Form
     {
         UserModel user = null;
-        SubjectModell subject = null;
-        public EditSubjectInfo(UserModel user,SubjectModell subject)
+        SubjectModel subject = null;
+        public EditSubjectInfo(UserModel user,SubjectModel subject)
         {
             this.user = user;
             this.subject = subject;

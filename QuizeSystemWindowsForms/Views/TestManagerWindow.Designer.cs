@@ -32,18 +32,19 @@
             this.buttonEditTest = new System.Windows.Forms.Button();
             this.buttonDeleteTest = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridViewTests = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTests)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonCreateNewTest
             // 
-            this.buttonCreateNewTest.Location = new System.Drawing.Point(470, 307);
+            this.buttonCreateNewTest.Location = new System.Drawing.Point(430, 307);
             this.buttonCreateNewTest.Name = "buttonCreateNewTest";
-            this.buttonCreateNewTest.Size = new System.Drawing.Size(75, 23);
+            this.buttonCreateNewTest.Size = new System.Drawing.Size(115, 23);
             this.buttonCreateNewTest.TabIndex = 1;
             this.buttonCreateNewTest.Text = "Create new test";
             this.buttonCreateNewTest.UseVisualStyleBackColor = true;
+            this.buttonCreateNewTest.Click += new System.EventHandler(this.buttonCreateNewTest_Click);
             // 
             // buttonEditTest
             // 
@@ -62,6 +63,7 @@
             this.buttonDeleteTest.TabIndex = 3;
             this.buttonDeleteTest.Text = "Delete test";
             this.buttonDeleteTest.UseVisualStyleBackColor = true;
+            this.buttonDeleteTest.Click += new System.EventHandler(this.buttonDeleteTest_Click);
             // 
             // buttonClose
             // 
@@ -73,28 +75,30 @@
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
-            // dataGridView1
+            // dataGridViewTests
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(800, 283);
-            this.dataGridView1.TabIndex = 5;
+            this.dataGridViewTests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTests.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridViewTests.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewTests.Name = "dataGridViewTests";
+            this.dataGridViewTests.Size = new System.Drawing.Size(800, 283);
+            this.dataGridViewTests.TabIndex = 5;
+            this.dataGridViewTests.SelectionChanged += new System.EventHandler(this.dataGridViewTests_SelectionChanged);
             // 
             // TestManagerWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 398);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewTests);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonDeleteTest);
             this.Controls.Add(this.buttonEditTest);
             this.Controls.Add(this.buttonCreateNewTest);
             this.Name = "TestManagerWindow";
             this.Text = "TestManagerWindow";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.TestManagerWindow_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTests)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -104,6 +108,6 @@
         private System.Windows.Forms.Button buttonEditTest;
         private System.Windows.Forms.Button buttonDeleteTest;
         private System.Windows.Forms.Button buttonClose;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewTests;
     }
 }

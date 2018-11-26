@@ -40,7 +40,7 @@ namespace QuizeSystemWindowsForms.Views
         {
             UserModel user = new UserModel(this.textBoxLogin.Text, this.textBoxPassword.Text,
                                                                     this.textBoxName.Text, this.textBoxSurname.Text, this.textBoxEmail.Text);
-            RegisterUserController userController = new RegisterUserController();
+            UserController userController = new UserController();
             if (userController.RegisterUser(user))
             {
                 MessageBox.Show("New User Added");

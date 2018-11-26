@@ -10,9 +10,9 @@ namespace QuizeSystemWindowsForms.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public SubjectModell Subject { get; set; }
+        public SubjectModel Subject { get; set; }
         public string Describtion { get; set; }
-        public TopicModel(string name,SubjectModell subject , string describtion)
+        public TopicModel(string name,SubjectModel subject , string describtion)
         {
             this.Name = name;
             this.Subject = subject;

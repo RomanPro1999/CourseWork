@@ -31,7 +31,7 @@ namespace QuizeSystemWindowsForms.Views
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            UsersController controller = new UsersController();
+            UserController controller = new UserController();
             UserModel userToDel = controller.LoadUserByLogin(this.textBoxLogin.Text);
             if (controller.DeleteUser(userToDel))
             {

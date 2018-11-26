@@ -7,12 +7,27 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Drawing;
 using QuizeSystemWindowsForms.Models;
+using QuizeSystemWindowsForms;
 using System.IO;
 
 namespace QuizeSystemWindowsForms.Controllers
 {
     class SubjectController
     {
+        private static byte[] ConvertImageToBinary(Image img)
+        {
+            using (var ms = new MemoryStream())
+            {
+                img.Save(ms, img.RawFormat);
+                return ms.ToArray();
+            }
+        }
+        private static Image ConvertBinaryToImage(byte[] img)
+        {
+            MemoryStream ms = new MemoryStream(img);
+            Image returnImage = Image.FromStream(ms);
+            return returnImage;
+        }
         public DataTable LoadSubjectsTable()
         {
             DbConnection dbConnection = new DbConnection();
@@ -35,9 +50,9 @@ namespace QuizeSystemWindowsForms.Controllers
             }
             return dataTable;
         }
-        public List<SubjectModell> LoadSubjectsList()
+        public List<SubjectModel> LoadSubjectsList()
         {
-            List<SubjectModell> subjects = new List<SubjectModell>();
+            List<SubjectModel> subjects = new List<SubjectModel>();
             DbConnection dbConnection = new DbConnection();
             try
             {
@@ -48,7 +63,7 @@ namespace QuizeSystemWindowsForms.Controllers
                 {
                     while (reader.Read())
                     {
-                        SubjectModell subject = new SubjectModell();
+                        SubjectModel subject = new SubjectModel();
                         subject.Id = reader.GetInt32(0);
                         subject.Name = reader.GetString(1);
                         subject.Image = ConvertBinaryToImage((byte[])reader["subject_image"]);
@@ -67,21 +82,8 @@ namespace QuizeSystemWindowsForms.Controllers
             }
             return subjects;
         }
-        private byte [] ConvertImageToBinary(Image img)
-        {
-            using (var ms = new MemoryStream())
-            {
-                img.Save(ms, img.RawFormat);
-                return ms.ToArray();
-            }
-        }
-        private Image ConvertBinaryToImage(byte[] img)
-        {
-            MemoryStream ms = new MemoryStream(img);
-            Image returnImage = Image.FromStream(ms);
-            return returnImage;
-        }
-        public bool AddSubject(SubjectModell subject)
+       
+        public bool AddSubject(SubjectModel subject)
         {
             bool isSuccess=false;
             DbConnection dbConnection = new DbConnection();
@@ -111,7 +113,7 @@ namespace QuizeSystemWindowsForms.Controllers
             }
             return isSuccess;
         }
-        public bool EditSubject(SubjectModell subject)
+        public bool EditSubject(SubjectModel subject)
         {
             bool isSuccess = false;
             
@@ -143,7 +145,7 @@ namespace QuizeSystemWindowsForms.Controllers
             }
             return isSuccess;
         }
-        public bool DeleteSubject(SubjectModell subject)
+        public bool DeleteSubject(SubjectModel subject)
         {
             DbConnection dbConnection = new DbConnection();
             bool isSuccess = false;
@@ -169,10 +171,10 @@ namespace QuizeSystemWindowsForms.Controllers
             }
             return isSuccess;
         }
-        public SubjectModell LoadSubjectByName(string name)
+        public SubjectModel LoadSubjectByName(string name)
         {
             DbConnection dbConnection = new DbConnection();
-            SubjectModell subject = null;
+            SubjectModel subject = null;
             try
             {
                 dbConnection.OpenConnection();
@@ -182,7 +184,7 @@ namespace QuizeSystemWindowsForms.Controllers
 
                 if (reader.HasRows)
                 {
-                    subject = new SubjectModell();
+                    subject = new SubjectModel();
                     while (reader.Read())
                     {
                         subject.Id = reader.GetInt32(0);

@@ -41,7 +41,6 @@
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.textBoxLogin = new System.Windows.Forms.TextBox();
-            this.buttonSearchByLogin = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -113,53 +112,43 @@
             // 
             this.textBoxRole.Location = new System.Drawing.Point(107, 261);
             this.textBoxRole.Name = "textBoxRole";
-            this.textBoxRole.Size = new System.Drawing.Size(155, 20);
+            this.textBoxRole.Size = new System.Drawing.Size(242, 20);
             this.textBoxRole.TabIndex = 7;
             // 
             // textBoxEmail
             // 
             this.textBoxEmail.Location = new System.Drawing.Point(107, 204);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEmail.Size = new System.Drawing.Size(242, 20);
             this.textBoxEmail.TabIndex = 8;
             // 
             // textBoxSurname
             // 
             this.textBoxSurname.Location = new System.Drawing.Point(117, 165);
             this.textBoxSurname.Name = "textBoxSurname";
-            this.textBoxSurname.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSurname.Size = new System.Drawing.Size(232, 20);
             this.textBoxSurname.TabIndex = 9;
             // 
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(117, 112);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxName.Size = new System.Drawing.Size(232, 20);
             this.textBoxName.TabIndex = 10;
             // 
             // textBoxPassword
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(117, 62);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPassword.Size = new System.Drawing.Size(232, 20);
             this.textBoxPassword.TabIndex = 11;
             // 
             // textBoxLogin
             // 
             this.textBoxLogin.Location = new System.Drawing.Point(117, 23);
             this.textBoxLogin.Name = "textBoxLogin";
-            this.textBoxLogin.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLogin.Size = new System.Drawing.Size(232, 20);
             this.textBoxLogin.TabIndex = 12;
-            // 
-            // buttonSearchByLogin
-            // 
-            this.buttonSearchByLogin.Location = new System.Drawing.Point(287, 20);
-            this.buttonSearchByLogin.Name = "buttonSearchByLogin";
-            this.buttonSearchByLogin.Size = new System.Drawing.Size(103, 23);
-            this.buttonSearchByLogin.TabIndex = 13;
-            this.buttonSearchByLogin.Text = "Search by login";
-            this.buttonSearchByLogin.UseVisualStyleBackColor = true;
-            this.buttonSearchByLogin.Click += new System.EventHandler(this.buttonSearchByLogin_Click_1);
             // 
             // buttonSave
             // 
@@ -177,7 +166,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 424);
             this.Controls.Add(this.buttonSave);
-            this.Controls.Add(this.buttonSearchByLogin);
             this.Controls.Add(this.textBoxLogin);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxName);
@@ -193,6 +181,7 @@
             this.Controls.Add(this.buttonCancel);
             this.Name = "AdminEditUser";
             this.Text = "AdminEditUser";
+            this.Load += new System.EventHandler(this.AdminEditUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,7 +202,6 @@
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.TextBox textBoxLogin;
-        private System.Windows.Forms.Button buttonSearchByLogin;
         private System.Windows.Forms.Button buttonSave;
     }
 }

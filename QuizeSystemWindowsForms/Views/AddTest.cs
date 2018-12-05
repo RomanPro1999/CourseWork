@@ -16,13 +16,11 @@ namespace QuizeSystemWindowsForms.Views
     {
         UserModel user;
         SubjectModel subject;
-        TopicModel topic;
         TestController testController;
-        public AddTest(UserModel user, SubjectModel subject, TopicModel topic)
+        public AddTest(UserModel user, SubjectModel subject)
         {
             this.user = user;
             this.subject = subject;
-            this.topic = topic;
             testController = new TestController();
             InitializeComponent();
         }
@@ -30,13 +28,13 @@ namespace QuizeSystemWindowsForms.Views
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
-            //TestManagerWindow testManagerWindow = new TestManagerWindow(user, subject, topic);
-            //testManagerWindow.Show();
+            TestManagerWindow testManagerWindow = new TestManagerWindow(user, subject);
+            testManagerWindow.Show();
         }
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            TestModel test = new TestModel(this.textBoxName.Text, Convert.ToInt32(this.textBoxNumberOfQuestions.Text), topic);
+            TestModel test = new TestModel(this.textBoxName.Text, Convert.ToInt32(this.textBoxNumberOfQuestions.Text),subject);
             if (testController.AddTest(test))
             {
                 MessageBox.Show("Test created");
@@ -45,26 +43,6 @@ namespace QuizeSystemWindowsForms.Views
             {
                 MessageBox.Show("Error");
             }
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxNumberOfQuestions_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

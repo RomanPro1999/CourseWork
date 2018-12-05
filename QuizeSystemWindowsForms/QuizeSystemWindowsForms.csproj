@@ -50,13 +50,11 @@
     <Compile Include="Controllers\QuestionController.cs" />
     <Compile Include="Controllers\SubjectController.cs" />
     <Compile Include="Controllers\TestController.cs" />
-    <Compile Include="Controllers\TopicController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="DbConnection.cs" />
     <Compile Include="Models\QuestionModel.cs" />
     <Compile Include="Models\SubjectModel.cs" />
     <Compile Include="Models\TestModel.cs" />
-    <Compile Include="Models\TopicModel.cs" />
     <Compile Include="Models\UserChoice.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Views\AddQuestion.cs">
@@ -77,12 +75,6 @@
     <Compile Include="Views\AddTest.Designer.cs">
       <DependentUpon>AddTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\AddTopic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\AddTopic.Designer.cs">
-      <DependentUpon>AddTopic.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\AdminEditUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,29 +87,11 @@
     <Compile Include="Views\AdminStartWindow.Designer.cs">
       <DependentUpon>AdminStartWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\AllTopicsView.cs">
+    <Compile Include="Views\CurrentQuestionWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\AllTopicsView.Designer.cs">
-      <DependentUpon>AllTopicsView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\DeleteSubjectByName.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\DeleteSubjectByName.Designer.cs">
-      <DependentUpon>DeleteSubjectByName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\DeleteUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\DeleteUser.Designer.cs">
-      <DependentUpon>DeleteUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\EditSubject.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\EditSubject.Designer.cs">
-      <DependentUpon>EditSubject.cs</DependentUpon>
+    <Compile Include="Views\CurrentQuestionWindow.Designer.cs">
+      <DependentUpon>CurrentQuestionWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\EditSubjectInfo.cs">
       <SubType>Form</SubType>
@@ -130,18 +104,6 @@
     </Compile>
     <Compile Include="Views\EditTest.Designer.cs">
       <DependentUpon>EditTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\EditTopic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\EditTopic.Designer.cs">
-      <DependentUpon>EditTopic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\EditTopicInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\EditTopicInfo.Designer.cs">
-      <DependentUpon>EditTopicInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\EditUser.cs">
       <SubType>Form</SubType>
@@ -169,6 +131,12 @@
     <Compile Include="Views\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Results.Designer.cs">
+      <DependentUpon>Results.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\SubjectManagerWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +148,12 @@
     </Compile>
     <Compile Include="Views\TestManagerWindow.Designer.cs">
       <DependentUpon>TestManagerWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TestSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TestSelect.Designer.cs">
+      <DependentUpon>TestSelect.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\UsersManagerWindow.cs">
       <SubType>Form</SubType>
@@ -202,38 +176,20 @@
     <EmbeddedResource Include="Views\AddTest.resx">
       <DependentUpon>AddTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\AddTopic.resx">
-      <DependentUpon>AddTopic.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\AdminEditUser.resx">
       <DependentUpon>AdminEditUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AdminStartWindow.resx">
       <DependentUpon>AdminStartWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\AllTopicsView.resx">
-      <DependentUpon>AllTopicsView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\DeleteSubjectByName.resx">
-      <DependentUpon>DeleteSubjectByName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\DeleteUser.resx">
-      <DependentUpon>DeleteUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\EditSubject.resx">
-      <DependentUpon>EditSubject.cs</DependentUpon>
+    <EmbeddedResource Include="Views\CurrentQuestionWindow.resx">
+      <DependentUpon>CurrentQuestionWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\EditSubjectInfo.resx">
       <DependentUpon>EditSubjectInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\EditTest.resx">
       <DependentUpon>EditTest.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\EditTopic.resx">
-      <DependentUpon>EditTopic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\EditTopicInfo.resx">
-      <DependentUpon>EditTopicInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>
@@ -257,11 +213,17 @@
     <EmbeddedResource Include="Views\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Results.resx">
+      <DependentUpon>Results.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\SubjectManagerWindow.resx">
       <DependentUpon>SubjectManagerWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TestManagerWindow.resx">
       <DependentUpon>TestManagerWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TestSelect.resx">
+      <DependentUpon>TestSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UsersManagerWindow.resx">
       <DependentUpon>UsersManagerWindow.cs</DependentUpon>

@@ -44,7 +44,6 @@
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Test name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -54,11 +53,10 @@
             this.label2.Size = new System.Drawing.Size(99, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Number of question";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(6, 145);
+            this.buttonSave.Location = new System.Drawing.Point(270, 155);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 2;
@@ -68,7 +66,7 @@
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(117, 145);
+            this.buttonClose.Location = new System.Drawing.Point(351, 155);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
             this.buttonClose.TabIndex = 3;
@@ -80,17 +78,15 @@
             // 
             this.textBoxName.Location = new System.Drawing.Point(129, 15);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(232, 20);
+            this.textBoxName.Size = new System.Drawing.Size(297, 20);
             this.textBoxName.TabIndex = 5;
-            this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
             // textBoxNumberOfQuestions
             // 
             this.textBoxNumberOfQuestions.Location = new System.Drawing.Point(129, 72);
             this.textBoxNumberOfQuestions.Name = "textBoxNumberOfQuestions";
-            this.textBoxNumberOfQuestions.Size = new System.Drawing.Size(232, 20);
+            this.textBoxNumberOfQuestions.Size = new System.Drawing.Size(297, 20);
             this.textBoxNumberOfQuestions.TabIndex = 6;
-            this.textBoxNumberOfQuestions.TextChanged += new System.EventHandler(this.textBoxNumberOfQuestions_TextChanged);
             // 
             // AddTest
             // 

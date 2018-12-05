@@ -35,12 +35,13 @@
             this.buttonChooseImage = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBoxSubjectImage = new System.Windows.Forms.PictureBox();
+            this.buttonManageTests = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSubjectImage)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(326, 363);
+            this.buttonSave.Location = new System.Drawing.Point(349, 363);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 13;
@@ -50,7 +51,7 @@
             // 
             // textBoxSubjectName
             // 
-            this.textBoxSubjectName.Location = new System.Drawing.Point(140, 258);
+            this.textBoxSubjectName.Location = new System.Drawing.Point(117, 212);
             this.textBoxSubjectName.Name = "textBoxSubjectName";
             this.textBoxSubjectName.Size = new System.Drawing.Size(191, 20);
             this.textBoxSubjectName.TabIndex = 12;
@@ -58,7 +59,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 265);
+            this.label2.Location = new System.Drawing.Point(24, 212);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 13);
             this.label2.TabIndex = 11;
@@ -76,7 +77,7 @@
             // 
             // buttonChooseImage
             // 
-            this.buttonChooseImage.Location = new System.Drawing.Point(360, 108);
+            this.buttonChooseImage.Location = new System.Drawing.Point(349, 160);
             this.buttonChooseImage.Name = "buttonChooseImage";
             this.buttonChooseImage.Size = new System.Drawing.Size(116, 23);
             this.buttonChooseImage.TabIndex = 9;
@@ -87,7 +88,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 81);
+            this.label1.Location = new System.Drawing.Point(12, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 8;
@@ -96,18 +97,29 @@
             // pictureBoxSubjectImage
             // 
             this.pictureBoxSubjectImage.Image = global::QuizeSystemWindowsForms.Properties.Resources._default;
-            this.pictureBoxSubjectImage.Location = new System.Drawing.Point(140, 65);
+            this.pictureBoxSubjectImage.Location = new System.Drawing.Point(117, 20);
             this.pictureBoxSubjectImage.Name = "pictureBoxSubjectImage";
             this.pictureBoxSubjectImage.Size = new System.Drawing.Size(214, 163);
             this.pictureBoxSubjectImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxSubjectImage.TabIndex = 7;
             this.pictureBoxSubjectImage.TabStop = false;
             // 
+            // buttonManageTests
+            // 
+            this.buttonManageTests.Location = new System.Drawing.Point(234, 363);
+            this.buttonManageTests.Name = "buttonManageTests";
+            this.buttonManageTests.Size = new System.Drawing.Size(97, 23);
+            this.buttonManageTests.TabIndex = 14;
+            this.buttonManageTests.Text = "Manage tests";
+            this.buttonManageTests.UseVisualStyleBackColor = true;
+            this.buttonManageTests.Click += new System.EventHandler(this.buttonManageTests_Click);
+            // 
             // EditSubjectInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(572, 450);
+            this.Controls.Add(this.buttonManageTests);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.textBoxSubjectName);
             this.Controls.Add(this.label2);
@@ -133,5 +145,6 @@
         private System.Windows.Forms.Button buttonChooseImage;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBoxSubjectImage;
+        private System.Windows.Forms.Button buttonManageTests;
     }
 }

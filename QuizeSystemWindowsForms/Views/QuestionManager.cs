@@ -16,14 +16,14 @@ namespace QuizeSystemWindowsForms.Views
     {
         UserModel user;
         SubjectModel subject;
-        TopicModel topic;
+        TestModel test;
         QuestionController questionController;
         QuestionModel selectedQuestion;
-        public QuestionManager(UserModel user,SubjectModel subject,TopicModel topic)
+        public QuestionManager(UserModel user,SubjectModel subject,TestModel test)
         {
             this.user = user;
             this.subject = subject;
-            this.topic = topic;
+            this.test = test;
             questionController = new QuestionController();
             selectedQuestion = null; 
             InitializeComponent();
@@ -32,12 +32,12 @@ namespace QuizeSystemWindowsForms.Views
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
-            EditTopic editTopic = new EditTopic(user, subject, topic);
+            EditSubjectInfo editTopic = new EditSubjectInfo(user, subject);
             editTopic.Show();
         }
         private void ResetQuestionTable()
         {
-            this.dataGridView1.DataSource = questionController.LoadQuestionTable();
+            this.dataGridView1.DataSource = questionController.LoadQuestionTable(test);
             if (dataGridView1.Rows.Count > 0)
             {
                 dataGridView1.Rows[0].Selected = true;
@@ -67,7 +67,7 @@ namespace QuizeSystemWindowsForms.Views
         private void buttonAddQuestion_Click(object sender, EventArgs e)
         {
             this.Close();
-            AddQuestion addQuestionWindow = new AddQuestion(user, subject, topic);
+            AddQuestion addQuestionWindow = new AddQuestion(user, subject, test);
             addQuestionWindow.Show();
         }
 

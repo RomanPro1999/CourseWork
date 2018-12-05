@@ -12,19 +12,26 @@ using QuizeSystemWindowsForms.Controllers;
 
 namespace QuizeSystemWindowsForms.Views
 {
-    public partial class TestManagerWindow : Form
+    public partial class TestSelect : Form
     {
         UserModel user;
         SubjectModel subject;
         TestModel selectedTest;
         TestController testController;
-        public TestManagerWindow(UserModel user,SubjectModel subject)
+        public TestSelect(UserModel user,SubjectModel subject)
         {
-            this.user = user;
             this.subject = subject;
+            this.user = user;
             selectedTest = null;
-            testController = new TestController();
+            this.testController = new TestController();
             InitializeComponent();
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            UserStartWindow userStartWindow = new UserStartWindow(user);
+            userStartWindow.Show();
         }
         private void ResetTestTable()
         {
@@ -34,23 +41,9 @@ namespace QuizeSystemWindowsForms.Views
                 dataGridViewTests.Rows[0].Selected = true;
             }
         }
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            EditSubjectInfo editSubject = new EditSubjectInfo(user, subject);
-            editSubject.Show();
-        }
-
-        private void TestManagerWindow_Load(object sender, EventArgs e)
+        private void TestSelect_Load(object sender, EventArgs e)
         {
             ResetTestTable();
-        }
-
-        private void buttonCreateNewTest_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            AddTest addWindow = new AddTest(user,subject);
-            addWindow.Show();
         }
 
         private void dataGridViewTests_SelectionChanged(object sender, EventArgs e)
@@ -65,33 +58,22 @@ namespace QuizeSystemWindowsForms.Views
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
             }
         }
 
-        private void buttonDeleteTest_Click(object sender, EventArgs e)
+        private void buttonTakeTest_Click(object sender, EventArgs e)
         {
             if (selectedTest != null)
             {
-                if (testController.DeleteTest(selectedTest))
-                {
-                    MessageBox.Show("Test has been deleted");
-                    ResetTestTable();
-                }
-                else
-                {
-                    MessageBox.Show("Error");
-                }
-            }
-        }
-
-        private void buttonEditTest_Click(object sender, EventArgs e)
-        {
-            if (selectedTest != null)
-            {
-                EditTest editTestWindow = new EditTest(user, subject, selectedTest);
+                List<QuestionModel> questions = testController.LoadQuestions(selectedTest);
+                CurrentQuestionWindow currentQuestionWindow = new CurrentQuestionWindow(user, selectedTest, questions, 0);
                 this.Close();
-                editTestWindow.Show();  
+                currentQuestionWindow.Show();
+            }
+            else
+            {
+                MessageBox.Show("Select test");
             }
         }
     }

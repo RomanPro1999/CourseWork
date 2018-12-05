@@ -49,7 +49,6 @@ namespace QuizeSystemWindowsForms.Views
             this.Hide();
             SubjectManagerWindow subjectManager = new SubjectManagerWindow(user);
             subjectManager.ShowDialog();
-
         }
     }
 }

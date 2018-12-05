@@ -16,9 +16,12 @@ namespace QuizeSystemWindowsForms.Views
     {
         UserModel user = null;
         UserModel userToEdit = null;
-        public AdminEditUser(UserModel user)
+        UserController editUserController;
+        public AdminEditUser(UserModel user,UserModel userToEdit)
         {
             this.user = user;
+            this.userToEdit = userToEdit;
+            editUserController = new UserController();
             InitializeComponent();
         }
 
@@ -31,13 +34,6 @@ namespace QuizeSystemWindowsForms.Views
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            if (userToEdit == null)
-            {
-                MessageBox.Show("Load user data using load by login method");
-            }
-            else
-            {
-                UserController editUserController = new UserController();
                 userToEdit.Login = this.textBoxLogin.Text;
                 userToEdit.Password = this.textBoxPassword.Text;
                 userToEdit.Name = this.textBoxName.Text;
@@ -63,32 +59,19 @@ namespace QuizeSystemWindowsForms.Views
                     MessageBox.Show("An error has occured");
                 }
                 
-            }
         }
 
-        private void buttonSearchByLogin_Click_1(object sender, EventArgs e)
+        private void AdminEditUser_Load(object sender, EventArgs e)
         {
-            UserController usersController = new UserController();
-            if (this.textBoxLogin.Text == "")
-            {
-                MessageBox.Show("Enter user login");
-            }
-            userToEdit = usersController.LoadUserByLogin(this.textBoxLogin.Text);
-            if (userToEdit != null)
-            {
-                MessageBox.Show("Data successifuly loaded");
-                this.textBoxLogin.Text = userToEdit.Login;
-                this.textBoxPassword.Text = userToEdit.Password;
-                this.textBoxName.Text = userToEdit.Name;
-                this.textBoxSurname.Text = userToEdit.Surname;
-                this.textBoxEmail.Text = userToEdit.Email;
-                this.textBoxRole.Text = userToEdit.Role;
-            }
-            else
-            {
-                MessageBox.Show("Error");
-            }
+            this.textBoxEmail.Text = userToEdit.Email;
+            this.textBoxLogin.Text = userToEdit.Login;
+            this.textBoxName.Text = userToEdit.Name;
+            this.textBoxPassword.Text = userToEdit.Password;
+            this.textBoxRole.Text = userToEdit.Role;
+            this.textBoxSurname.Text = userToEdit.Surname;
             
         }
     }
+
+        
 }

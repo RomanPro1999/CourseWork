@@ -54,6 +54,7 @@
             this.buttonEditTest.TabIndex = 2;
             this.buttonEditTest.Text = "Edit test";
             this.buttonEditTest.UseVisualStyleBackColor = true;
+            this.buttonEditTest.Click += new System.EventHandler(this.buttonEditTest_Click);
             // 
             // buttonDeleteTest
             // 
@@ -77,11 +78,13 @@
             // 
             // dataGridViewTests
             // 
+            this.dataGridViewTests.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewTests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTests.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridViewTests.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewTests.Name = "dataGridViewTests";
-            this.dataGridViewTests.Size = new System.Drawing.Size(800, 283);
+            this.dataGridViewTests.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewTests.Size = new System.Drawing.Size(868, 283);
             this.dataGridViewTests.TabIndex = 5;
             this.dataGridViewTests.SelectionChanged += new System.EventHandler(this.dataGridViewTests_SelectionChanged);
             // 
@@ -89,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 398);
+            this.ClientSize = new System.Drawing.Size(868, 412);
             this.Controls.Add(this.dataGridViewTests);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonDeleteTest);

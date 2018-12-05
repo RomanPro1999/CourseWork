@@ -49,7 +49,7 @@ namespace QuizeSystemWindowsForms
                 }
                 else
                 {
-                    UserStartWindow userWindow = new UserStartWindow();
+                    UserStartWindow userWindow = new UserStartWindow(user);
                     userWindow.Show();
                     this.Hide();
                 }

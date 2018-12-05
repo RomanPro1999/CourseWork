@@ -14,7 +14,8 @@ namespace QuizeSystemWindowsForms.Views
 {
     public partial class EditUser : Form
     {
-        UserModel user=null;
+        UserModel user;
+
         public EditUser(UserModel user)
         {
             InitializeComponent();
@@ -24,16 +25,9 @@ namespace QuizeSystemWindowsForms.Views
             this.textBoxName.Text = user.Name;
             this.textBoxSurname.Text = user.Surname;
             this.textBoxEmail.Text = user.Email;
-            this.textBoxRole.Text = user.Role;
-            if (user.Role == "Admin")
-            {
-                this.groupBox1.Visible = true;
-            }
         }
         public EditUser()
-        {
-
-        }
+        {}
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
@@ -48,10 +42,6 @@ namespace QuizeSystemWindowsForms.Views
             user.Name = this.textBoxName.Text;
             user.Surname = this.textBoxSurname.Text;
             user.Email = this.textBoxEmail.Text;
-            if (this.groupBox1.Visible == true)
-            {
-                user.Role = this.textBoxRole.Text;
-            }
             if (editUserController.SaveChanges(user))
             {
                 MessageBox.Show("Data saved");
@@ -72,7 +62,7 @@ namespace QuizeSystemWindowsForms.Views
             }
             else
             {
-                UserStartWindow userStart = new UserStartWindow();
+                UserStartWindow userStart = new UserStartWindow(user);
                 userStart.Show();
             }
             this.Close();

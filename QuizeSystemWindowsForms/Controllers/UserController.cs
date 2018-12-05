@@ -202,5 +202,42 @@ namespace QuizeSystemWindowsForms.Controllers
             }
             return isSuccess;
         }
+        public UserModel LoadUserById(int id)
+        {
+            DbConnection dbConnection = new DbConnection();
+            UserModel user = null;
+            try
+            {
+                dbConnection.OpenConnection();
+                SqlCommand cmd = new SqlCommand("select user_id,login,password,name,surname,email,role from user_view where user_id=@id", dbConnection.connection);
+                cmd.Parameters.AddWithValue("@id", id);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    user = new UserModel();
+                    while (reader.Read())
+                    {
+                        user.Id = reader.GetInt32(0);
+                        user.Login = reader.GetString(1);
+                        user.Password = reader.GetString(2);
+                        user.Name = reader.GetString(3);
+                        user.Surname = reader.GetString(4);
+                        user.Email = reader.GetString(5);
+                        user.Role = reader.GetString(6);
+                    }
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                dbConnection.CloseConnection();
+            }
+            return user;
+        }
     }
 }

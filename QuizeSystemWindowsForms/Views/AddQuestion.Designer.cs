@@ -30,6 +30,8 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBoxSimpleValue = new System.Windows.Forms.TextBox();
             this.buttonClose2 = new System.Windows.Forms.Button();
             this.buttonSaveSimple = new System.Windows.Forms.Button();
             this.textBoxSimpleChoice2 = new System.Windows.Forms.TextBox();
@@ -43,6 +45,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBoxImageValue = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.richTextBoxImageQuestion = new System.Windows.Forms.RichTextBox();
             this.buttonClose = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
@@ -58,10 +62,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBoxImageValue = new System.Windows.Forms.TextBox();
-            this.textBoxSimpleValue = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -102,6 +102,22 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add simple question";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(32, 227);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(34, 13);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "Value";
+            // 
+            // textBoxSimpleValue
+            // 
+            this.textBoxSimpleValue.Location = new System.Drawing.Point(146, 224);
+            this.textBoxSimpleValue.Name = "textBoxSimpleValue";
+            this.textBoxSimpleValue.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSimpleValue.TabIndex = 12;
             // 
             // buttonClose2
             // 
@@ -231,6 +247,22 @@
             this.tabPage2.Text = "Add question with image";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // textBoxImageValue
+            // 
+            this.textBoxImageValue.Location = new System.Drawing.Point(648, 50);
+            this.textBoxImageValue.Name = "textBoxImageValue";
+            this.textBoxImageValue.Size = new System.Drawing.Size(100, 20);
+            this.textBoxImageValue.TabIndex = 16;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(562, 53);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(34, 13);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "Value";
+            // 
             // richTextBoxImageQuestion
             // 
             this.richTextBoxImageQuestion.Location = new System.Drawing.Point(115, 8);
@@ -274,6 +306,7 @@
             this.pictureBoxImage.Location = new System.Drawing.Point(112, 206);
             this.pictureBoxImage.Name = "pictureBoxImage";
             this.pictureBoxImage.Size = new System.Drawing.Size(249, 146);
+            this.pictureBoxImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxImage.TabIndex = 10;
             this.pictureBoxImage.TabStop = false;
             // 
@@ -358,38 +391,6 @@
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Question";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(562, 53);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(34, 13);
-            this.label12.TabIndex = 15;
-            this.label12.Text = "Value";
-            // 
-            // textBoxImageValue
-            // 
-            this.textBoxImageValue.Location = new System.Drawing.Point(648, 50);
-            this.textBoxImageValue.Name = "textBoxImageValue";
-            this.textBoxImageValue.Size = new System.Drawing.Size(100, 20);
-            this.textBoxImageValue.TabIndex = 16;
-            // 
-            // textBoxSimpleValue
-            // 
-            this.textBoxSimpleValue.Location = new System.Drawing.Point(146, 224);
-            this.textBoxSimpleValue.Name = "textBoxSimpleValue";
-            this.textBoxSimpleValue.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSimpleValue.TabIndex = 12;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(32, 227);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(34, 13);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "Value";
             // 
             // AddQuestion
             // 

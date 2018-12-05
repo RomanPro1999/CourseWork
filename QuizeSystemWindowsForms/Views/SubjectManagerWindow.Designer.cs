@@ -63,7 +63,7 @@
             // buttonEditSubject
             // 
             this.buttonEditSubject.AutoSize = true;
-            this.buttonEditSubject.Location = new System.Drawing.Point(129, 19);
+            this.buttonEditSubject.Location = new System.Drawing.Point(153, 19);
             this.buttonEditSubject.Name = "buttonEditSubject";
             this.buttonEditSubject.Size = new System.Drawing.Size(75, 23);
             this.buttonEditSubject.TabIndex = 2;
@@ -74,7 +74,7 @@
             // buttonDeleteSubject
             // 
             this.buttonDeleteSubject.AutoSize = true;
-            this.buttonDeleteSubject.Location = new System.Drawing.Point(236, 19);
+            this.buttonDeleteSubject.Location = new System.Drawing.Point(255, 19);
             this.buttonDeleteSubject.Name = "buttonDeleteSubject";
             this.buttonDeleteSubject.Size = new System.Drawing.Size(85, 23);
             this.buttonDeleteSubject.TabIndex = 1;
@@ -100,8 +100,10 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(663, 332);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // SubjectManagerWindow
             // 

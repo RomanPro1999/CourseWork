@@ -15,9 +15,13 @@ namespace QuizeSystemWindowsForms.Views
     public partial class UsersManagerWindow : Form
     {
         UserModel user;
+        UserController userContoller;
+        UserModel selectedUser;
         public UsersManagerWindow(UserModel user)
         {
             this.user = user;
+            userContoller= new UserController();
+            selectedUser = null;
             InitializeComponent();
         }
 
@@ -30,10 +34,11 @@ namespace QuizeSystemWindowsForms.Views
 
         private void UsersManagerWindow_Load(object sender, EventArgs e)
         {
-           UserController userContoler = new UserController();
-           this.dataGridView1.DataSource = userContoler.LoadUserDataTable();
-            Console.WriteLine(userContoler.LoadUserDataTable().Rows);
-            Console.WriteLine("something");
+            ResetTableData();
+        }
+        private void ResetTableData()
+        {
+            this.dataGridView1.DataSource = userContoller.LoadUserDataTable();
 
         }
 
@@ -46,16 +51,49 @@ namespace QuizeSystemWindowsForms.Views
 
         private void buttonEditUserAdmin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            AdminEditUser adminEdit = new AdminEditUser(user);
-            adminEdit.Show();
+            if (selectedUser != null)
+            {
+                this.Hide();
+                AdminEditUser adminEdit = new AdminEditUser(user,selectedUser);
+                adminEdit.Show();
+            }
+            else
+            {
+                MessageBox.Show("Select user to edit");
+            }
+            
         }
 
         private void buttonDeleteUserAdmin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            DeleteUser delWindow = new DeleteUser(user);
-            delWindow.Show();
+            if (selectedUser != null)
+            {
+                if (userContoller.DeleteUser(selectedUser))
+                {
+                    MessageBox.Show("User has been deleted");
+                    ResetTableData();
+                }
+                else
+                {
+                    MessageBox.Show("An errror has occured");
+                }
+            }
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+                {
+                    int id = Convert.ToInt32(row.Cells[0].Value.ToString());
+                    selectedUser = userContoller.LoadUserById(id);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

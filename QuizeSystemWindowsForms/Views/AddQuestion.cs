@@ -16,13 +16,13 @@ namespace QuizeSystemWindowsForms.Views
     {
         UserModel user;
         SubjectModel subject;
-        TopicModel topic;
+        TestModel test;
         QuestionController questionController;
-        public AddQuestion(UserModel user, SubjectModel subject, TopicModel topic)
+        public AddQuestion(UserModel user, SubjectModel subject, TestModel test)
         {
             this.user = user;
             this.subject = subject;
-            this.topic = topic;
+            this.test = test;
             this.questionController = new QuestionController();
             InitializeComponent();
         }
@@ -30,14 +30,14 @@ namespace QuizeSystemWindowsForms.Views
         private void buttonClose2_Click(object sender, EventArgs e)
         {
             this.Close();
-            QuestionManager questionManagerWindow = new QuestionManager(user, subject, topic);
+            QuestionManager questionManagerWindow = new QuestionManager(user, subject, test);
             questionManagerWindow.Show();
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
-            QuestionManager questionManagerWindow = new QuestionManager(user, subject, topic);
+            QuestionManager questionManagerWindow = new QuestionManager(user, subject,test);
             questionManagerWindow.Show();
         }
 
@@ -64,7 +64,7 @@ namespace QuizeSystemWindowsForms.Views
        
         private void buttonSaveSimple_Click_1(object sender, EventArgs e)
         {
-            QuestionModel question = new QuestionModel(this.richTextBoxSimpleQuestion.Text, "Simple", this.topic, Convert.ToInt32(this.textBoxSimpleValue.Text));
+            QuestionModel question = new QuestionModel(this.richTextBoxSimpleQuestion.Text, "Simple", this.test, Convert.ToInt32(this.textBoxSimpleValue.Text));
             question.Answers.Add(new UserChoice(this.textBoxSimpleAnswer.Text));
             question.Choises.Add(new UserChoice(this.textBoxSimpleChoice1.Text));
             question.Choises.Add(new UserChoice(this.textBoxSimpleChoice3.Text));
@@ -83,7 +83,7 @@ namespace QuizeSystemWindowsForms.Views
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            QuestionModel question = new QuestionModel(this.richTextBoxImageQuestion.Text, "Image", this.topic, Convert.ToInt32(this.textBoxImageValue.Text));
+            QuestionModel question = new QuestionModel(this.richTextBoxImageQuestion.Text, "Image", this.test, Convert.ToInt32(this.textBoxImageValue.Text));
             question.Image = pictureBoxImage.Image;
             question.Answers.Add(new UserChoice(this.textBoxAnswerImage.Text));
             question.Choises.Add(new UserChoice(this.textBoxChoiceImage1.Text));

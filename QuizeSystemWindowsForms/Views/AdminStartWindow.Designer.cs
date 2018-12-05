@@ -31,9 +31,9 @@
             this.labelUserName = new System.Windows.Forms.Label();
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonEditProfile = new System.Windows.Forms.Button();
             this.buttonManageSubjects = new System.Windows.Forms.Button();
             this.buttonManageUsers = new System.Windows.Forms.Button();
+            this.buttonEditProfile = new System.Windows.Forms.Button();
             this.labelEmail = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -50,9 +50,9 @@
             // buttonLogOut
             // 
             this.buttonLogOut.AutoSize = true;
-            this.buttonLogOut.Location = new System.Drawing.Point(450, 32);
+            this.buttonLogOut.Location = new System.Drawing.Point(126, 71);
             this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(75, 23);
+            this.buttonLogOut.Size = new System.Drawing.Size(114, 23);
             this.buttonLogOut.TabIndex = 1;
             this.buttonLogOut.Text = "Log out";
             this.buttonLogOut.UseVisualStyleBackColor = true;
@@ -62,23 +62,15 @@
             // 
             this.groupBox1.AutoSize = true;
             this.groupBox1.Controls.Add(this.buttonManageSubjects);
+            this.groupBox1.Controls.Add(this.buttonLogOut);
+            this.groupBox1.Controls.Add(this.buttonEditProfile);
             this.groupBox1.Controls.Add(this.buttonManageUsers);
             this.groupBox1.Location = new System.Drawing.Point(28, 83);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(517, 284);
+            this.groupBox1.Size = new System.Drawing.Size(299, 154);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Controls";
-            // 
-            // buttonEditProfile
-            // 
-            this.buttonEditProfile.Location = new System.Drawing.Point(354, 32);
-            this.buttonEditProfile.Name = "buttonEditProfile";
-            this.buttonEditProfile.Size = new System.Drawing.Size(75, 23);
-            this.buttonEditProfile.TabIndex = 2;
-            this.buttonEditProfile.Text = "Edit profile";
-            this.buttonEditProfile.UseVisualStyleBackColor = true;
-            this.buttonEditProfile.Click += new System.EventHandler(this.buttonEditProfile_Click);
             // 
             // buttonManageSubjects
             // 
@@ -102,6 +94,16 @@
             this.buttonManageUsers.UseVisualStyleBackColor = true;
             this.buttonManageUsers.Click += new System.EventHandler(this.buttonManageUsers_Click);
             // 
+            // buttonEditProfile
+            // 
+            this.buttonEditProfile.Location = new System.Drawing.Point(6, 71);
+            this.buttonEditProfile.Name = "buttonEditProfile";
+            this.buttonEditProfile.Size = new System.Drawing.Size(114, 23);
+            this.buttonEditProfile.TabIndex = 2;
+            this.buttonEditProfile.Text = "Edit profile";
+            this.buttonEditProfile.UseVisualStyleBackColor = true;
+            this.buttonEditProfile.Click += new System.EventHandler(this.buttonEditProfile_Click);
+            // 
             // labelEmail
             // 
             this.labelEmail.AutoSize = true;
@@ -115,10 +117,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 450);
+            this.ClientSize = new System.Drawing.Size(429, 365);
             this.Controls.Add(this.labelEmail);
-            this.Controls.Add(this.buttonEditProfile);
-            this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.labelUserName);
             this.Name = "AdminStartWindow";

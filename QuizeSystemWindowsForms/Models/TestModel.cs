@@ -11,13 +11,13 @@ namespace QuizeSystemWindowsForms.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public int NumberOfQuestions { get; set; }
-        public TopicModel Topic { get; set; }
+        public SubjectModel Subject { get; set; }
         
-        public TestModel(string Name,int numberOfQuestions,TopicModel topic)
+        public TestModel(string Name,int numberOfQuestions,SubjectModel subject)
         {
             this.Name = Name;
             this.NumberOfQuestions = numberOfQuestions;
-            this.Topic = topic;
+            this.Subject = subject;
         }
         public TestModel() { }
     }

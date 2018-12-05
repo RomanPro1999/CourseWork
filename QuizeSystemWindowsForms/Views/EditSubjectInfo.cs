@@ -28,8 +28,8 @@ namespace QuizeSystemWindowsForms.Views
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             this.Close();
-            EditSubject edit = new EditSubject(user);
-            edit.Show();
+            SubjectManagerWindow subjectManagerWindow = new SubjectManagerWindow(user);
+            subjectManagerWindow.Show();
         }
 
         private void buttonChooseImage_Click(object sender, EventArgs e)
@@ -69,8 +69,15 @@ namespace QuizeSystemWindowsForms.Views
 
         private void EditSubjectInfo_Load(object sender, EventArgs e)
         {
-            //this.pictureBoxSubjectImage.Image = subject.Image;
-            //this.textBoxSubjectName.Text = subject.Name;
+            this.pictureBoxSubjectImage.Image = subject.Image;
+            this.textBoxSubjectName.Text = subject.Name;
+        }
+
+        private void buttonManageTests_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            TestManagerWindow testManagerWindow = new TestManagerWindow(user, subject);
+            testManagerWindow.Show();
         }
     }
 }

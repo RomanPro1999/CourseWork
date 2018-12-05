@@ -15,5 +15,9 @@ namespace QuizeSystemWindowsForms.Models
         {
             this.Text = text;
         }
+        public bool Equals(UserChoice choice)
+        {
+            return this.Text == choice.Text ? true : false;
+        }
     }
 }

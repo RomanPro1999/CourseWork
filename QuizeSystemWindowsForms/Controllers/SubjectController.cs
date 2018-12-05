@@ -171,6 +171,39 @@ namespace QuizeSystemWindowsForms.Controllers
             }
             return isSuccess;
         }
+        public SubjectModel LoadSubjectById(int id)
+        {
+            DbConnection dbConnection = new DbConnection();
+            SubjectModel subject = null;
+            try
+            {
+                dbConnection.OpenConnection();
+                SqlCommand cmd = new SqlCommand("select * from subjects where subject_id=@id", dbConnection.connection);
+                cmd.Parameters.AddWithValue("@id", id);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    subject = new SubjectModel();
+                    while (reader.Read())
+                    {
+                        subject.Id = reader.GetInt32(0);
+                        subject.Name = reader.GetString(1);
+                        subject.Image = ConvertBinaryToImage((byte[])reader["subject_image"]);
+                    }
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                dbConnection.CloseConnection();
+            }
+            return subject;
+        }
         public SubjectModel LoadSubjectByName(string name)
         {
             DbConnection dbConnection = new DbConnection();
@@ -204,6 +237,8 @@ namespace QuizeSystemWindowsForms.Controllers
             }
             return subject;
         }
+
+
 
     }
 }

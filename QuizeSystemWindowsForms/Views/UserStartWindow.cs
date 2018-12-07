@@ -40,19 +40,26 @@ namespace QuizeSystemWindowsForms.Views
 
         private void UserStartWindow_Load(object sender, EventArgs e)
         {
-            this.labelUserName.Text = user.Name + " " + user.Surname;
-            List<SubjectModel> subjects = new List<SubjectModel>();
-            subjects = subjectController.LoadSubjectsList();
-            foreach (var subject in subjects)
+            try
             {
-                this.comboBoxSubjects.Items.Add(subject.ToString());
+                this.labelUserName.Text = user.Name + " " + user.Surname;
+                List<SubjectModel> subjects = new List<SubjectModel>();
+                subjects = subjectController.LoadSubjectsList();
+                foreach (var subject in subjects)
+                {
+                    this.comboBoxSubjects.Items.Add(subject.ToString());
+                }
+                if (selectedSubject == null)
+                {
+                    selectedSubject = subjects[0];
+                }
+                this.comboBoxSubjects.SelectedItem = selectedSubject.Name;
+                this.pictureBoxSubjectImage.Image = selectedSubject.Image;
             }
-            if (selectedSubject ==null)
+            catch(Exception ex)
             {
-                selectedSubject = subjects[0];
+                Console.WriteLine(ex.StackTrace);
             }
-            this.comboBoxSubjects.SelectedItem = selectedSubject.Name;
-            this.pictureBoxSubjectImage.Image = selectedSubject.Image;
         }
 
         private void comboBoxSubjects_SelectedValueChanged(object sender, EventArgs e)

@@ -92,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 246);
+            this.ClientSize = new System.Drawing.Size(462, 215);
             this.Controls.Add(this.textBoxNumberOfQuestions);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.buttonClose);
@@ -100,7 +100,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AddTest";
-            this.Text = "AddTest";
+            this.Text = "Add test";
             this.ResumeLayout(false);
             this.PerformLayout();
 

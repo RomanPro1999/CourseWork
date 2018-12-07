@@ -32,8 +32,8 @@
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonManageSubjects = new System.Windows.Forms.Button();
-            this.buttonManageUsers = new System.Windows.Forms.Button();
             this.buttonEditProfile = new System.Windows.Forms.Button();
+            this.buttonManageUsers = new System.Windows.Forms.Button();
             this.labelEmail = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -50,9 +50,9 @@
             // buttonLogOut
             // 
             this.buttonLogOut.AutoSize = true;
-            this.buttonLogOut.Location = new System.Drawing.Point(126, 71);
+            this.buttonLogOut.Location = new System.Drawing.Point(185, 115);
             this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(114, 23);
+            this.buttonLogOut.Size = new System.Drawing.Size(142, 52);
             this.buttonLogOut.TabIndex = 1;
             this.buttonLogOut.Text = "Log out";
             this.buttonLogOut.UseVisualStyleBackColor = true;
@@ -65,9 +65,9 @@
             this.groupBox1.Controls.Add(this.buttonLogOut);
             this.groupBox1.Controls.Add(this.buttonEditProfile);
             this.groupBox1.Controls.Add(this.buttonManageUsers);
-            this.groupBox1.Location = new System.Drawing.Point(28, 83);
+            this.groupBox1.Location = new System.Drawing.Point(12, 75);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(299, 154);
+            this.groupBox1.Size = new System.Drawing.Size(337, 207);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Controls";
@@ -75,34 +75,34 @@
             // buttonManageSubjects
             // 
             this.buttonManageSubjects.AutoSize = true;
-            this.buttonManageSubjects.Location = new System.Drawing.Point(126, 19);
+            this.buttonManageSubjects.Location = new System.Drawing.Point(185, 43);
             this.buttonManageSubjects.Name = "buttonManageSubjects";
-            this.buttonManageSubjects.Size = new System.Drawing.Size(114, 23);
+            this.buttonManageSubjects.Size = new System.Drawing.Size(142, 52);
             this.buttonManageSubjects.TabIndex = 1;
             this.buttonManageSubjects.Text = "Manage Subjects";
             this.buttonManageSubjects.UseVisualStyleBackColor = true;
             this.buttonManageSubjects.Click += new System.EventHandler(this.buttonManageSubjects_Click);
             // 
-            // buttonManageUsers
-            // 
-            this.buttonManageUsers.AutoSize = true;
-            this.buttonManageUsers.Location = new System.Drawing.Point(6, 19);
-            this.buttonManageUsers.Name = "buttonManageUsers";
-            this.buttonManageUsers.Size = new System.Drawing.Size(114, 23);
-            this.buttonManageUsers.TabIndex = 0;
-            this.buttonManageUsers.Text = "Manage users";
-            this.buttonManageUsers.UseVisualStyleBackColor = true;
-            this.buttonManageUsers.Click += new System.EventHandler(this.buttonManageUsers_Click);
-            // 
             // buttonEditProfile
             // 
-            this.buttonEditProfile.Location = new System.Drawing.Point(6, 71);
+            this.buttonEditProfile.Location = new System.Drawing.Point(29, 115);
             this.buttonEditProfile.Name = "buttonEditProfile";
-            this.buttonEditProfile.Size = new System.Drawing.Size(114, 23);
+            this.buttonEditProfile.Size = new System.Drawing.Size(142, 52);
             this.buttonEditProfile.TabIndex = 2;
             this.buttonEditProfile.Text = "Edit profile";
             this.buttonEditProfile.UseVisualStyleBackColor = true;
             this.buttonEditProfile.Click += new System.EventHandler(this.buttonEditProfile_Click);
+            // 
+            // buttonManageUsers
+            // 
+            this.buttonManageUsers.AutoSize = true;
+            this.buttonManageUsers.Location = new System.Drawing.Point(29, 43);
+            this.buttonManageUsers.Name = "buttonManageUsers";
+            this.buttonManageUsers.Size = new System.Drawing.Size(142, 52);
+            this.buttonManageUsers.TabIndex = 0;
+            this.buttonManageUsers.Text = "Manage users";
+            this.buttonManageUsers.UseVisualStyleBackColor = true;
+            this.buttonManageUsers.Click += new System.EventHandler(this.buttonManageUsers_Click);
             // 
             // labelEmail
             // 
@@ -117,12 +117,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(429, 365);
+            this.ClientSize = new System.Drawing.Size(361, 294);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.labelUserName);
             this.Name = "AdminStartWindow";
-            this.Text = "AdminStartWindow";
+            this.Text = "Testing system";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

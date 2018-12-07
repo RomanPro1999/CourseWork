@@ -52,9 +52,9 @@
             // 
             // buttonCansel
             // 
-            this.buttonCansel.Location = new System.Drawing.Point(381, 19);
+            this.buttonCansel.Location = new System.Drawing.Point(508, 35);
             this.buttonCansel.Name = "buttonCansel";
-            this.buttonCansel.Size = new System.Drawing.Size(98, 23);
+            this.buttonCansel.Size = new System.Drawing.Size(125, 37);
             this.buttonCansel.TabIndex = 3;
             this.buttonCansel.Text = "Cancel";
             this.buttonCansel.UseVisualStyleBackColor = true;
@@ -63,9 +63,9 @@
             // buttonEditSubject
             // 
             this.buttonEditSubject.AutoSize = true;
-            this.buttonEditSubject.Location = new System.Drawing.Point(153, 19);
+            this.buttonEditSubject.Location = new System.Drawing.Point(282, 35);
             this.buttonEditSubject.Name = "buttonEditSubject";
-            this.buttonEditSubject.Size = new System.Drawing.Size(75, 23);
+            this.buttonEditSubject.Size = new System.Drawing.Size(102, 37);
             this.buttonEditSubject.TabIndex = 2;
             this.buttonEditSubject.Text = "Edit subject";
             this.buttonEditSubject.UseVisualStyleBackColor = true;
@@ -74,9 +74,9 @@
             // buttonDeleteSubject
             // 
             this.buttonDeleteSubject.AutoSize = true;
-            this.buttonDeleteSubject.Location = new System.Drawing.Point(255, 19);
+            this.buttonDeleteSubject.Location = new System.Drawing.Point(390, 35);
             this.buttonDeleteSubject.Name = "buttonDeleteSubject";
-            this.buttonDeleteSubject.Size = new System.Drawing.Size(85, 23);
+            this.buttonDeleteSubject.Size = new System.Drawing.Size(112, 37);
             this.buttonDeleteSubject.TabIndex = 1;
             this.buttonDeleteSubject.Text = "Delete subject";
             this.buttonDeleteSubject.UseVisualStyleBackColor = true;
@@ -85,9 +85,9 @@
             // buttonAddSubject
             // 
             this.buttonAddSubject.AutoSize = true;
-            this.buttonAddSubject.Location = new System.Drawing.Point(20, 19);
+            this.buttonAddSubject.Location = new System.Drawing.Point(146, 35);
             this.buttonAddSubject.Name = "buttonAddSubject";
-            this.buttonAddSubject.Size = new System.Drawing.Size(103, 23);
+            this.buttonAddSubject.Size = new System.Drawing.Size(130, 37);
             this.buttonAddSubject.TabIndex = 0;
             this.buttonAddSubject.Text = "Add subject";
             this.buttonAddSubject.UseVisualStyleBackColor = true;
@@ -113,7 +113,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Name = "SubjectManagerWindow";
-            this.Text = "SubjectManagerWindow";
+            this.Text = "Subject manager";
             this.Load += new System.EventHandler(this.SubjectManagerWindow_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

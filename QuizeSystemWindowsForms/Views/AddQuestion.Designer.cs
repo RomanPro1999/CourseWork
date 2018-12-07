@@ -106,7 +106,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(32, 227);
+            this.label13.Location = new System.Drawing.Point(32, 275);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(34, 13);
             this.label13.TabIndex = 13;
@@ -114,16 +114,16 @@
             // 
             // textBoxSimpleValue
             // 
-            this.textBoxSimpleValue.Location = new System.Drawing.Point(146, 224);
+            this.textBoxSimpleValue.Location = new System.Drawing.Point(146, 275);
             this.textBoxSimpleValue.Name = "textBoxSimpleValue";
-            this.textBoxSimpleValue.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSimpleValue.Size = new System.Drawing.Size(428, 20);
             this.textBoxSimpleValue.TabIndex = 12;
             // 
             // buttonClose2
             // 
-            this.buttonClose2.Location = new System.Drawing.Point(678, 345);
+            this.buttonClose2.Location = new System.Drawing.Point(664, 345);
             this.buttonClose2.Name = "buttonClose2";
-            this.buttonClose2.Size = new System.Drawing.Size(75, 23);
+            this.buttonClose2.Size = new System.Drawing.Size(89, 52);
             this.buttonClose2.TabIndex = 11;
             this.buttonClose2.Text = "Close";
             this.buttonClose2.UseVisualStyleBackColor = true;
@@ -131,9 +131,9 @@
             // 
             // buttonSaveSimple
             // 
-            this.buttonSaveSimple.Location = new System.Drawing.Point(583, 345);
+            this.buttonSaveSimple.Location = new System.Drawing.Point(565, 345);
             this.buttonSaveSimple.Name = "buttonSaveSimple";
-            this.buttonSaveSimple.Size = new System.Drawing.Size(75, 23);
+            this.buttonSaveSimple.Size = new System.Drawing.Size(93, 52);
             this.buttonSaveSimple.TabIndex = 10;
             this.buttonSaveSimple.Text = "Save";
             this.buttonSaveSimple.UseVisualStyleBackColor = true;
@@ -141,44 +141,44 @@
             // 
             // textBoxSimpleChoice2
             // 
-            this.textBoxSimpleChoice2.Location = new System.Drawing.Point(146, 143);
+            this.textBoxSimpleChoice2.Location = new System.Drawing.Point(146, 186);
             this.textBoxSimpleChoice2.Name = "textBoxSimpleChoice2";
-            this.textBoxSimpleChoice2.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSimpleChoice2.Size = new System.Drawing.Size(428, 20);
             this.textBoxSimpleChoice2.TabIndex = 9;
             // 
             // textBoxSimpleChoice3
             // 
-            this.textBoxSimpleChoice3.Location = new System.Drawing.Point(146, 183);
+            this.textBoxSimpleChoice3.Location = new System.Drawing.Point(146, 229);
             this.textBoxSimpleChoice3.Name = "textBoxSimpleChoice3";
-            this.textBoxSimpleChoice3.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSimpleChoice3.Size = new System.Drawing.Size(428, 20);
             this.textBoxSimpleChoice3.TabIndex = 8;
             // 
             // textBoxSimpleChoice1
             // 
-            this.textBoxSimpleChoice1.Location = new System.Drawing.Point(146, 99);
+            this.textBoxSimpleChoice1.Location = new System.Drawing.Point(146, 135);
             this.textBoxSimpleChoice1.Name = "textBoxSimpleChoice1";
-            this.textBoxSimpleChoice1.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSimpleChoice1.Size = new System.Drawing.Size(428, 20);
             this.textBoxSimpleChoice1.TabIndex = 7;
             // 
             // textBoxSimpleAnswer
             // 
-            this.textBoxSimpleAnswer.Location = new System.Drawing.Point(146, 64);
+            this.textBoxSimpleAnswer.Location = new System.Drawing.Point(146, 89);
             this.textBoxSimpleAnswer.Name = "textBoxSimpleAnswer";
-            this.textBoxSimpleAnswer.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSimpleAnswer.Size = new System.Drawing.Size(428, 20);
             this.textBoxSimpleAnswer.TabIndex = 6;
             // 
             // richTextBoxSimpleQuestion
             // 
             this.richTextBoxSimpleQuestion.Location = new System.Drawing.Point(146, 23);
             this.richTextBoxSimpleQuestion.Name = "richTextBoxSimpleQuestion";
-            this.richTextBoxSimpleQuestion.Size = new System.Drawing.Size(303, 25);
+            this.richTextBoxSimpleQuestion.Size = new System.Drawing.Size(455, 47);
             this.richTextBoxSimpleQuestion.TabIndex = 5;
             this.richTextBoxSimpleQuestion.Text = "";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(32, 190);
+            this.label11.Location = new System.Drawing.Point(32, 236);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(93, 13);
             this.label11.TabIndex = 4;
@@ -187,7 +187,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(32, 150);
+            this.label10.Location = new System.Drawing.Point(32, 186);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(93, 13);
             this.label10.TabIndex = 3;
@@ -196,7 +196,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(39, 102);
+            this.label9.Location = new System.Drawing.Point(32, 142);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(93, 13);
             this.label9.TabIndex = 2;
@@ -205,7 +205,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(38, 71);
+            this.label8.Location = new System.Drawing.Point(38, 89);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(42, 13);
             this.label8.TabIndex = 1;
@@ -249,15 +249,15 @@
             // 
             // textBoxImageValue
             // 
-            this.textBoxImageValue.Location = new System.Drawing.Point(648, 50);
+            this.textBoxImageValue.Location = new System.Drawing.Point(583, 11);
             this.textBoxImageValue.Name = "textBoxImageValue";
-            this.textBoxImageValue.Size = new System.Drawing.Size(100, 20);
+            this.textBoxImageValue.Size = new System.Drawing.Size(182, 20);
             this.textBoxImageValue.TabIndex = 16;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(562, 53);
+            this.label12.Location = new System.Drawing.Point(525, 11);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(34, 13);
             this.label12.TabIndex = 15;
@@ -273,9 +273,9 @@
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(648, 341);
+            this.buttonClose.Location = new System.Drawing.Point(631, 341);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(75, 23);
+            this.buttonClose.Size = new System.Drawing.Size(92, 49);
             this.buttonClose.TabIndex = 13;
             this.buttonClose.Text = "Close";
             this.buttonClose.UseVisualStyleBackColor = true;
@@ -283,9 +283,9 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(521, 341);
+            this.buttonSave.Location = new System.Drawing.Point(499, 341);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(75, 23);
+            this.buttonSave.Size = new System.Drawing.Size(97, 49);
             this.buttonSave.TabIndex = 12;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = true;
@@ -293,9 +293,9 @@
             // 
             // buttonLoadImage
             // 
-            this.buttonLoadImage.Location = new System.Drawing.Point(393, 341);
+            this.buttonLoadImage.Location = new System.Drawing.Point(378, 341);
             this.buttonLoadImage.Name = "buttonLoadImage";
-            this.buttonLoadImage.Size = new System.Drawing.Size(75, 23);
+            this.buttonLoadImage.Size = new System.Drawing.Size(90, 49);
             this.buttonLoadImage.TabIndex = 11;
             this.buttonLoadImage.Text = "Load image";
             this.buttonLoadImage.UseVisualStyleBackColor = true;
@@ -314,28 +314,28 @@
             // 
             this.textBoxAnswerImage.Location = new System.Drawing.Point(112, 50);
             this.textBoxAnswerImage.Name = "textBoxAnswerImage";
-            this.textBoxAnswerImage.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAnswerImage.Size = new System.Drawing.Size(395, 20);
             this.textBoxAnswerImage.TabIndex = 9;
             // 
             // textBoxChoiceImage1
             // 
             this.textBoxChoiceImage1.Location = new System.Drawing.Point(115, 83);
             this.textBoxChoiceImage1.Name = "textBoxChoiceImage1";
-            this.textBoxChoiceImage1.Size = new System.Drawing.Size(100, 20);
+            this.textBoxChoiceImage1.Size = new System.Drawing.Size(392, 20);
             this.textBoxChoiceImage1.TabIndex = 8;
             // 
             // textBoxChoiceImage2
             // 
             this.textBoxChoiceImage2.Location = new System.Drawing.Point(115, 119);
             this.textBoxChoiceImage2.Name = "textBoxChoiceImage2";
-            this.textBoxChoiceImage2.Size = new System.Drawing.Size(100, 20);
+            this.textBoxChoiceImage2.Size = new System.Drawing.Size(392, 20);
             this.textBoxChoiceImage2.TabIndex = 7;
             // 
             // textBoxChoiceImage3
             // 
             this.textBoxChoiceImage3.Location = new System.Drawing.Point(115, 155);
             this.textBoxChoiceImage3.Name = "textBoxChoiceImage3";
-            this.textBoxChoiceImage3.Size = new System.Drawing.Size(100, 20);
+            this.textBoxChoiceImage3.Size = new System.Drawing.Size(392, 20);
             this.textBoxChoiceImage3.TabIndex = 6;
             // 
             // label6
@@ -399,7 +399,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabControl1);
             this.Name = "AddQuestion";
-            this.Text = "AddQuestion";
+            this.Text = "Add Question";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

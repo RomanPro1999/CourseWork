@@ -110,12 +110,8 @@ namespace QuizeSystemWindowsForms.Views
                 {
                     maxScore += question.Value;
                 }
-                Console.WriteLine(score);
-                Console.WriteLine(maxScore);
                 double scr = Convert.ToDouble(score);
-
                 scr = scr/maxScore*100;
-                Console.WriteLine(scr);
                 score = Convert.ToInt32(scr);
                 testController.WriteTestResults(test, user, score);
                 this.Close();
@@ -127,7 +123,7 @@ namespace QuizeSystemWindowsForms.Views
             {
                 currentQuestion++;
                 this.Close();
-                CurrentQuestionWindow currentQuestionWindow = new CurrentQuestionWindow(user,test, questions, currentQuestion);
+                CurrentQuestionWindow currentQuestionWindow = new CurrentQuestionWindow(user,test, questions, currentQuestion,score);
                 currentQuestionWindow.Show();
             }
         }

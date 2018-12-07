@@ -35,5 +35,10 @@ namespace QuizeSystemWindowsForms.Models
         {
             return Id.ToString() + " " + QuestionText + " " + QuestionType + " " + Value.ToString();
         }
+        public bool ModelIsValid()
+        {
+            bool isSuccess = true;
+            return isSuccess;
+        }
     }
 }

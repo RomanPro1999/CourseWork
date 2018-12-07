@@ -118,7 +118,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelUserName);
             this.Name = "UserStartWindow";
-            this.Text = "UserStartWindow";
+            this.Text = "Testing system";
             this.Load += new System.EventHandler(this.UserStartWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSubjectImage)).EndInit();
             this.ResumeLayout(false);

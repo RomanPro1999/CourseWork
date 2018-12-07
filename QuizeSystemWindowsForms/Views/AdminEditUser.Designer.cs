@@ -46,7 +46,7 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(355, 360);
+            this.buttonCancel.Location = new System.Drawing.Point(274, 348);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 0;
@@ -57,16 +57,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 69);
+            this.label1.Location = new System.Drawing.Point(28, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Password";
+            this.label1.Visible = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 26);
+            this.label2.Location = new System.Drawing.Point(31, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 2;
@@ -75,7 +76,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(45, 119);
+            this.label3.Location = new System.Drawing.Point(28, 112);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 3;
@@ -84,7 +85,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(45, 172);
+            this.label4.Location = new System.Drawing.Point(28, 162);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 4;
@@ -93,7 +94,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(36, 221);
+            this.label5.Location = new System.Drawing.Point(31, 211);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 5;
@@ -102,7 +103,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(36, 281);
+            this.label6.Location = new System.Drawing.Point(31, 268);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 6;
@@ -124,35 +125,36 @@
             // 
             // textBoxSurname
             // 
-            this.textBoxSurname.Location = new System.Drawing.Point(117, 165);
+            this.textBoxSurname.Location = new System.Drawing.Point(107, 155);
             this.textBoxSurname.Name = "textBoxSurname";
-            this.textBoxSurname.Size = new System.Drawing.Size(232, 20);
+            this.textBoxSurname.Size = new System.Drawing.Size(242, 20);
             this.textBoxSurname.TabIndex = 9;
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(117, 112);
+            this.textBoxName.Location = new System.Drawing.Point(107, 112);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(232, 20);
+            this.textBoxName.Size = new System.Drawing.Size(242, 20);
             this.textBoxName.TabIndex = 10;
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(117, 62);
+            this.textBoxPassword.Location = new System.Drawing.Point(107, 62);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(232, 20);
+            this.textBoxPassword.Size = new System.Drawing.Size(242, 20);
             this.textBoxPassword.TabIndex = 11;
+            this.textBoxPassword.Visible = false;
             // 
             // textBoxLogin
             // 
-            this.textBoxLogin.Location = new System.Drawing.Point(117, 23);
+            this.textBoxLogin.Location = new System.Drawing.Point(107, 23);
             this.textBoxLogin.Name = "textBoxLogin";
-            this.textBoxLogin.Size = new System.Drawing.Size(232, 20);
+            this.textBoxLogin.Size = new System.Drawing.Size(242, 20);
             this.textBoxLogin.TabIndex = 12;
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(274, 360);
+            this.buttonSave.Location = new System.Drawing.Point(188, 348);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 14;
@@ -164,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 424);
+            this.ClientSize = new System.Drawing.Size(393, 424);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.textBoxLogin);
             this.Controls.Add(this.textBoxPassword);
@@ -180,7 +182,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonCancel);
             this.Name = "AdminEditUser";
-            this.Text = "AdminEditUser";
+            this.Text = "Edit user info";
             this.Load += new System.EventHandler(this.AdminEditUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

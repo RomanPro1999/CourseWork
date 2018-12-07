@@ -40,5 +40,6 @@ namespace QuizeSystemWindowsForms.Models
             else
                 return true;
         }
+       
     }
 }

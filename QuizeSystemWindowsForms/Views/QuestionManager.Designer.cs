@@ -40,9 +40,9 @@
             // 
             // buttonDeleteQuestion
             // 
-            this.buttonDeleteQuestion.Location = new System.Drawing.Point(395, 23);
+            this.buttonDeleteQuestion.Location = new System.Drawing.Point(480, 23);
             this.buttonDeleteQuestion.Name = "buttonDeleteQuestion";
-            this.buttonDeleteQuestion.Size = new System.Drawing.Size(168, 46);
+            this.buttonDeleteQuestion.Size = new System.Drawing.Size(284, 46);
             this.buttonDeleteQuestion.TabIndex = 0;
             this.buttonDeleteQuestion.Text = "Delete question";
             this.buttonDeleteQuestion.UseVisualStyleBackColor = true;
@@ -52,7 +52,7 @@
             // 
             this.buttonAddQuestion.Location = new System.Drawing.Point(62, 23);
             this.buttonAddQuestion.Name = "buttonAddQuestion";
-            this.buttonAddQuestion.Size = new System.Drawing.Size(182, 46);
+            this.buttonAddQuestion.Size = new System.Drawing.Size(269, 46);
             this.buttonAddQuestion.TabIndex = 1;
             this.buttonAddQuestion.Text = "Add new question ";
             this.buttonAddQuestion.UseVisualStyleBackColor = true;
@@ -60,9 +60,9 @@
             // 
             // buttonEditQuestion
             // 
-            this.buttonEditQuestion.Location = new System.Drawing.Point(62, 98);
+            this.buttonEditQuestion.Location = new System.Drawing.Point(62, 88);
             this.buttonEditQuestion.Name = "buttonEditQuestion";
-            this.buttonEditQuestion.Size = new System.Drawing.Size(182, 39);
+            this.buttonEditQuestion.Size = new System.Drawing.Size(269, 51);
             this.buttonEditQuestion.TabIndex = 2;
             this.buttonEditQuestion.Text = "Edit Question";
             this.buttonEditQuestion.UseVisualStyleBackColor = true;
@@ -70,9 +70,9 @@
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(395, 98);
+            this.buttonClose.Location = new System.Drawing.Point(480, 88);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(168, 39);
+            this.buttonClose.Size = new System.Drawing.Size(284, 51);
             this.buttonClose.TabIndex = 4;
             this.buttonClose.Text = "Close";
             this.buttonClose.UseVisualStyleBackColor = true;
@@ -114,7 +114,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "QuestionManager";
-            this.Text = "QuestionManager";
+            this.Text = "Question manager";
             this.Load += new System.EventHandler(this.QuestionManager_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);

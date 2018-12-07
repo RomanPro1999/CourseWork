@@ -20,5 +20,10 @@ namespace QuizeSystemWindowsForms.Models
             this.Subject = subject;
         }
         public TestModel() { }
+        public bool ModelIsValid()
+        {
+            bool isSuccess = true;
+            return isSuccess;
+        }
     }
 }

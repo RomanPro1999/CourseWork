@@ -19,5 +19,10 @@ namespace QuizeSystemWindowsForms.Models
         {
             return this.Text == choice.Text ? true : false;
         }
+        public bool ModelIsValid()
+        {
+            bool isSuccess = true;
+            return isSuccess;
+        }
     }
 }

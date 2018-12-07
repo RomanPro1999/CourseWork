@@ -145,7 +145,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelQuestion);
             this.Name = "CurrentQuestionWindow";
-            this.Text = "CurrentQuestion";
+            this.Text = "Test passing";
             this.Load += new System.EventHandler(this.CurrentQuestion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);

@@ -29,7 +29,7 @@ namespace QuizeSystemWindowsForms.Views
         {
             this.labelTestName.Text = test.Name;
             this.labelUserName.Text = user.Name + " " + user.Surname;
-            this.labelScore.Text = score.ToString();
+            this.labelScore.Text = score.ToString()+"%";
         }
 
         private void buttonContinue_Click(object sender, EventArgs e)

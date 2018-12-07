@@ -59,7 +59,7 @@
             // 
             // buttonChooseImage
             // 
-            this.buttonChooseImage.Location = new System.Drawing.Point(335, 82);
+            this.buttonChooseImage.Location = new System.Drawing.Point(213, 221);
             this.buttonChooseImage.Name = "buttonChooseImage";
             this.buttonChooseImage.Size = new System.Drawing.Size(116, 23);
             this.buttonChooseImage.TabIndex = 2;
@@ -69,9 +69,9 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(425, 337);
+            this.buttonCancel.Location = new System.Drawing.Point(190, 339);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.Size = new System.Drawing.Size(139, 58);
             this.buttonCancel.TabIndex = 3;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -80,7 +80,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 239);
+            this.label2.Location = new System.Drawing.Point(25, 277);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 13);
             this.label2.TabIndex = 4;
@@ -88,16 +88,16 @@
             // 
             // textBoxSubjectName
             // 
-            this.textBoxSubjectName.Location = new System.Drawing.Point(115, 232);
+            this.textBoxSubjectName.Location = new System.Drawing.Point(115, 270);
             this.textBoxSubjectName.Name = "textBoxSubjectName";
-            this.textBoxSubjectName.Size = new System.Drawing.Size(191, 20);
+            this.textBoxSubjectName.Size = new System.Drawing.Size(214, 20);
             this.textBoxSubjectName.TabIndex = 5;
             // 
             // buttonAddSubject
             // 
-            this.buttonAddSubject.Location = new System.Drawing.Point(301, 337);
+            this.buttonAddSubject.Location = new System.Drawing.Point(28, 339);
             this.buttonAddSubject.Name = "buttonAddSubject";
-            this.buttonAddSubject.Size = new System.Drawing.Size(75, 23);
+            this.buttonAddSubject.Size = new System.Drawing.Size(136, 58);
             this.buttonAddSubject.TabIndex = 6;
             this.buttonAddSubject.Text = "Add subject";
             this.buttonAddSubject.UseVisualStyleBackColor = true;
@@ -107,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(577, 450);
+            this.ClientSize = new System.Drawing.Size(375, 450);
             this.Controls.Add(this.buttonAddSubject);
             this.Controls.Add(this.textBoxSubjectName);
             this.Controls.Add(this.label2);
@@ -116,7 +116,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxSubjectImage);
             this.Name = "AddSubject";
-            this.Text = "AddSubject";
+            this.Text = "Add subject";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSubjectImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

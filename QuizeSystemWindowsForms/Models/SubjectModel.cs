@@ -23,5 +23,10 @@ namespace QuizeSystemWindowsForms.Models
 
         }
         public string ToString() => Name;
+        public bool ModelIsValid()
+        {
+            bool isSuccess = true;
+            return isSuccess;
+        }
     }
 }

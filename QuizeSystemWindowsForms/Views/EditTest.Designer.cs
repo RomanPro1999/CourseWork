@@ -103,7 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 339);
+            this.ClientSize = new System.Drawing.Size(406, 266);
             this.Controls.Add(this.buttonManageQuestions);
             this.Controls.Add(this.textBoxNumberOfQuestions);
             this.Controls.Add(this.textBoxName);
@@ -112,7 +112,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "EditTest";
-            this.Text = "EditTest";
+            this.Text = "Edit test";
             this.Load += new System.EventHandler(this.EditTest_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

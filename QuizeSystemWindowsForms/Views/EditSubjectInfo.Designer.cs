@@ -41,9 +41,9 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(349, 363);
+            this.buttonSave.Location = new System.Drawing.Point(140, 345);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(75, 23);
+            this.buttonSave.Size = new System.Drawing.Size(86, 41);
             this.buttonSave.TabIndex = 13;
             this.buttonSave.Text = "Save Changes";
             this.buttonSave.UseVisualStyleBackColor = true;
@@ -51,7 +51,7 @@
             // 
             // textBoxSubjectName
             // 
-            this.textBoxSubjectName.Location = new System.Drawing.Point(117, 212);
+            this.textBoxSubjectName.Location = new System.Drawing.Point(140, 286);
             this.textBoxSubjectName.Name = "textBoxSubjectName";
             this.textBoxSubjectName.Size = new System.Drawing.Size(191, 20);
             this.textBoxSubjectName.TabIndex = 12;
@@ -59,7 +59,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 212);
+            this.label2.Location = new System.Drawing.Point(14, 289);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 13);
             this.label2.TabIndex = 11;
@@ -67,9 +67,9 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(450, 363);
+            this.buttonCancel.Location = new System.Drawing.Point(256, 345);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.Size = new System.Drawing.Size(75, 41);
             this.buttonCancel.TabIndex = 10;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -77,7 +77,7 @@
             // 
             // buttonChooseImage
             // 
-            this.buttonChooseImage.Location = new System.Drawing.Point(349, 160);
+            this.buttonChooseImage.Location = new System.Drawing.Point(215, 229);
             this.buttonChooseImage.Name = "buttonChooseImage";
             this.buttonChooseImage.Size = new System.Drawing.Size(116, 23);
             this.buttonChooseImage.TabIndex = 9;
@@ -99,16 +99,16 @@
             this.pictureBoxSubjectImage.Image = global::QuizeSystemWindowsForms.Properties.Resources._default;
             this.pictureBoxSubjectImage.Location = new System.Drawing.Point(117, 20);
             this.pictureBoxSubjectImage.Name = "pictureBoxSubjectImage";
-            this.pictureBoxSubjectImage.Size = new System.Drawing.Size(214, 163);
+            this.pictureBoxSubjectImage.Size = new System.Drawing.Size(214, 188);
             this.pictureBoxSubjectImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxSubjectImage.TabIndex = 7;
             this.pictureBoxSubjectImage.TabStop = false;
             // 
             // buttonManageTests
             // 
-            this.buttonManageTests.Location = new System.Drawing.Point(234, 363);
+            this.buttonManageTests.Location = new System.Drawing.Point(17, 345);
             this.buttonManageTests.Name = "buttonManageTests";
-            this.buttonManageTests.Size = new System.Drawing.Size(97, 23);
+            this.buttonManageTests.Size = new System.Drawing.Size(97, 41);
             this.buttonManageTests.TabIndex = 14;
             this.buttonManageTests.Text = "Manage tests";
             this.buttonManageTests.UseVisualStyleBackColor = true;
@@ -118,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(572, 450);
+            this.ClientSize = new System.Drawing.Size(369, 440);
             this.Controls.Add(this.buttonManageTests);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.textBoxSubjectName);
@@ -128,7 +128,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxSubjectImage);
             this.Name = "EditSubjectInfo";
-            this.Text = "EditSubjectInfo";
+            this.Text = "Edit subject";
             this.Load += new System.EventHandler(this.EditSubjectInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSubjectImage)).EndInit();
             this.ResumeLayout(false);

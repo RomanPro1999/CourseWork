@@ -47,15 +47,15 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(807, 406);
+            this.dataGridView1.Size = new System.Drawing.Size(807, 418);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(732, 449);
+            this.buttonCancel.Location = new System.Drawing.Point(710, 424);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.Size = new System.Drawing.Size(85, 39);
             this.buttonCancel.TabIndex = 1;
             this.buttonCancel.Text = "Close";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -63,9 +63,9 @@
             // 
             // buttonRegisterUserAdmin
             // 
-            this.buttonRegisterUserAdmin.Location = new System.Drawing.Point(441, 449);
+            this.buttonRegisterUserAdmin.Location = new System.Drawing.Point(355, 424);
             this.buttonRegisterUserAdmin.Name = "buttonRegisterUserAdmin";
-            this.buttonRegisterUserAdmin.Size = new System.Drawing.Size(123, 23);
+            this.buttonRegisterUserAdmin.Size = new System.Drawing.Size(161, 39);
             this.buttonRegisterUserAdmin.TabIndex = 2;
             this.buttonRegisterUserAdmin.Text = "Register New User";
             this.buttonRegisterUserAdmin.UseVisualStyleBackColor = true;
@@ -73,9 +73,9 @@
             // 
             // buttonEditUserAdmin
             // 
-            this.buttonEditUserAdmin.Location = new System.Drawing.Point(570, 449);
+            this.buttonEditUserAdmin.Location = new System.Drawing.Point(522, 424);
             this.buttonEditUserAdmin.Name = "buttonEditUserAdmin";
-            this.buttonEditUserAdmin.Size = new System.Drawing.Size(75, 23);
+            this.buttonEditUserAdmin.Size = new System.Drawing.Size(101, 39);
             this.buttonEditUserAdmin.TabIndex = 3;
             this.buttonEditUserAdmin.Text = "Edit user";
             this.buttonEditUserAdmin.UseVisualStyleBackColor = true;
@@ -83,9 +83,9 @@
             // 
             // buttonDeleteUserAdmin
             // 
-            this.buttonDeleteUserAdmin.Location = new System.Drawing.Point(651, 449);
+            this.buttonDeleteUserAdmin.Location = new System.Drawing.Point(629, 424);
             this.buttonDeleteUserAdmin.Name = "buttonDeleteUserAdmin";
-            this.buttonDeleteUserAdmin.Size = new System.Drawing.Size(75, 23);
+            this.buttonDeleteUserAdmin.Size = new System.Drawing.Size(75, 39);
             this.buttonDeleteUserAdmin.TabIndex = 4;
             this.buttonDeleteUserAdmin.Text = "Delete User";
             this.buttonDeleteUserAdmin.UseVisualStyleBackColor = true;
@@ -102,7 +102,7 @@
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.dataGridView1);
             this.Name = "UsersManagerWindow";
-            this.Text = "UsersManagerWindow";
+            this.Text = "Users manager";
             this.Load += new System.EventHandler(this.UsersManagerWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -38,9 +38,9 @@
             // 
             // buttonCreateNewTest
             // 
-            this.buttonCreateNewTest.Location = new System.Drawing.Point(430, 307);
+            this.buttonCreateNewTest.Location = new System.Drawing.Point(245, 314);
             this.buttonCreateNewTest.Name = "buttonCreateNewTest";
-            this.buttonCreateNewTest.Size = new System.Drawing.Size(115, 23);
+            this.buttonCreateNewTest.Size = new System.Drawing.Size(178, 62);
             this.buttonCreateNewTest.TabIndex = 1;
             this.buttonCreateNewTest.Text = "Create new test";
             this.buttonCreateNewTest.UseVisualStyleBackColor = true;
@@ -48,9 +48,9 @@
             // 
             // buttonEditTest
             // 
-            this.buttonEditTest.Location = new System.Drawing.Point(551, 307);
+            this.buttonEditTest.Location = new System.Drawing.Point(429, 314);
             this.buttonEditTest.Name = "buttonEditTest";
-            this.buttonEditTest.Size = new System.Drawing.Size(75, 23);
+            this.buttonEditTest.Size = new System.Drawing.Size(138, 62);
             this.buttonEditTest.TabIndex = 2;
             this.buttonEditTest.Text = "Edit test";
             this.buttonEditTest.UseVisualStyleBackColor = true;
@@ -58,9 +58,9 @@
             // 
             // buttonDeleteTest
             // 
-            this.buttonDeleteTest.Location = new System.Drawing.Point(632, 307);
+            this.buttonDeleteTest.Location = new System.Drawing.Point(573, 314);
             this.buttonDeleteTest.Name = "buttonDeleteTest";
-            this.buttonDeleteTest.Size = new System.Drawing.Size(75, 23);
+            this.buttonDeleteTest.Size = new System.Drawing.Size(138, 62);
             this.buttonDeleteTest.TabIndex = 3;
             this.buttonDeleteTest.Text = "Delete test";
             this.buttonDeleteTest.UseVisualStyleBackColor = true;
@@ -68,9 +68,9 @@
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(713, 307);
+            this.buttonClose.Location = new System.Drawing.Point(717, 314);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(75, 23);
+            this.buttonClose.Size = new System.Drawing.Size(138, 62);
             this.buttonClose.TabIndex = 4;
             this.buttonClose.Text = "Close";
             this.buttonClose.UseVisualStyleBackColor = true;
@@ -99,7 +99,7 @@
             this.Controls.Add(this.buttonEditTest);
             this.Controls.Add(this.buttonCreateNewTest);
             this.Name = "TestManagerWindow";
-            this.Text = "TestManagerWindow";
+            this.Text = "Test manager";
             this.Load += new System.EventHandler(this.TestManagerWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTests)).EndInit();
             this.ResumeLayout(false);
